@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-bar-icon">
+            <a href="./dashboard.html"><img src="amazon_clone_img/assets/amazon_logo.png" alt="amazon_log"
+                    class="nav-bar-icon-img">
+            </a>
+        </div>
+        <div class="location">
+            <a href="#"><img src="amazon_clone_img/assets/location_icon.png" height="20" class="location_icon">
+            </a>
+            <div class="loc">
+                <p>Location in</p>
+                <h1>India</h1>
+            </div>
+        </div>
+        <div class="nav-bar-search">
+            <div class="drop-down-menu">
+                <p>All</p>
+                <img src="amazon_clone_img/assets/dropdown_icon.png" alt="">
+            </div>
+            <input type="text" placeholder="Search products" class="nav-bar-input">
+            <img src="amazon_clone_img/assets/search_icon.png" alt="search_icon" class="nav-bar-search-icon">
+        </div>
+        <div class="account" id="account">
+            <button class="btn12" id="btn12">
+                <h3>Account</h3>
+                <img src="amazon_clone_img/assets/dropdown_icon.png" alt="">
+            </button>
+            <a class="logout" href="index.html">Logout</a>
+
+        </div>
+        <a href="/index.html" class="mobile-user-icon" style="display: none;">
+            <img src="./amazon_clone_img/assets/user.png" alt="">
+        </a>
+        <a href="./cart.html">
+            <div class="cart_icon1"><img src="amazon_clone_img/assets/cart_icon.png" width="35px" alt="">
+                <div class="cic">
+                    <p id="cart_icon_count"></p>
+                </div>
+            </div>
+            <h4>Cart</h4>
+        </a>
+    </nav>
+    <div class="header-slider">
+        <a href="#" class="control_prev">&#129144;</a>
+        <a href="#" class="control_next">&#129146;</a>
+        <ul>
+            <img class="header-img" src="amazon_clone_img/assets/header1.jpg" alt="" class="header-img">
+            <img src="amazon_clone_img/assets/header2.jpg" alt="" class="header-img">
+            <img src="amazon_clone_img/assets/header4.jpg" alt="" class="header-img">
+            <img src="amazon_clone_img/assets/header5.jpg" alt="" class="header-img">
+            <img src="amazon_clone_img/assets/header6.jpg" alt="" class="header-img">
+        </ul>
+    </div>
+    <div class="box-row box-head">
+        <div class="box-col">
+            <h3>Free International Returns</h3>
+            <img src="./amazon_clone_img/assets/box1-1.jpg" alt="">
+            <button onclick="Add_to_cart(this)" class="add-to-cart">Add to cart</button>
+            <a href="">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Lunar New Year</h3>
+            <img src="./amazon_clone_img/assets/box1-2.jpg" alt="">
+            <button onclick="Add_to_cart(this)" class="add-to-cart">Add to cart</button>
+            <a href="">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Toy in under 25$</h3>
+            <img src="./amazon_clone_img/assets/box1-3.jpg" alt="">
+            <button onclick="Add_to_cart(this)" class="add-to-cart">Add to cart</button>
+            <a href="">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Deal in PCs</h3>
+            <img src="./amazon_clone_img/assets/box1-4.jpg" alt="">
+            <button onclick="Add_to_cart(this)" class="add-to-cart">Add to cart</button>
+            <a href="">Shop more</a>
+        </div>
+    </div>
+    <div class="box-row">
+        <div class="box-col">
+            <h3>Grooming Products</h3>
+            <img src="./amazon_clone_img/assets/box2-1.jpg" alt="">
+            <button onclick="Add_to_cart(this)" class="add-to-cart">Add to cart</button>
+            <a href="">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Latest Mobile Devices</h3>
+            <img src="./amazon_clone_img/assets/box2-2.jpg" alt="">
+            <button onclick="Add_to_cart(this)" class="add-to-cart">Add to cart</button>
+            <a href="">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Pet Dogs</h3>
+            <img src="./amazon_clone_img/assets/box2-3.jpg" alt="">
+            <button onclick="Add_to_cart(this)" class="add-to-cart">Add to cart</button>
+            <a href="">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Fashion Mart</h3>
+            <img src="./amazon_clone_img/assets/box2-4.jpg" alt="">
+            <button onclick="Add_to_cart(this)" class="add-to-cart">Add to cart</button>
+            <a href="">Shop more</a>
+        </div>
+    </div>
+    <div class="products-slider">
+        <h2>Best sellers in sports and Outdoors</h2>
+        <div class="products">
+            <a href="products.html" target="_blank">
+                <img src="/amazon_clone_img/assets/product_img.jpg" alt="products-img">
+            </a>
+            <img src="amazon_clone_img/assets/product1-1.jpg" alt="">
+            <img src="amazon_clone_img/assets/product1-2.jpg" alt="">
+            <img src="amazon_clone_img/assets/product1-3.jpg" alt="">
+            <img src="amazon_clone_img/assets/product1-4.jpg" alt="">
+            <img src="amazon_clone_img/assets/product1-5.jpg" alt="">
+            <img src="amazon_clone_img/assets/product1-6.jpg" alt="">
+            <img src="amazon_clone_img/assets/product1-7.jpg" alt="">
+            <img src="amazon_clone_img/assets/product1-8.jpg" alt="">
+            <img src="amazon_clone_img/assets/product1-9.jpg" alt="">
+            <img src="amazon_clone_img/assets/product1-10.jpg" alt="">
+        </div>
+    </div>
+    <div class="box-row">
+        <div class="box-col">
+            <h3>Grooming Products</h3>
+            <img src="./amazon_clone_img/assets/box3-1.jpg" alt="">
+            <button onclick="Add_to_cart(this)" class="add-to-cart">Add to cart</button>
+            <a href="">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Latest Mobile Devices</h3>
+            <img src="./amazon_clone_img/assets/box3-2.jpg" alt="">
+            <button onclick="Add_to_cart(this)" class="add-to-cart">Add to cart</button>
+            <a href="">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Pet Dogs</h3>
+            <img src="./amazon_clone_img/assets/box3-3.jpg" alt="">
+            <button onclick="Add_to_cart(this)" class="add-to-cart">Add to cart</button>
+            <a href="">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Fashion Mart</h3>
+            <img src="./amazon_clone_img/assets/box3-4.jpg" alt="">
+            <button onclick="Add_to_cart(this)" class="add-to-cart">Add to cart</button>
+            <a href="">Shop more</a>
+        </div>
+    </div>
+    <div class="product-slider-with-price">
+        <h2>Deal under 25$</h2>
+        <div class="products">
+
+            <div class="product-cart">
+
+                <div class="product-img-container">
+                    <img src="amazon_clone_img/assets/product2-1.jpg" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>27% offer</p><span> Deal</span>
+
+                </div>
+                <p class="product-price"><span>$14.49</span> List Price:19.97</p>
+                <h4>This Product is the best for you</h4>
+            </div>
+            <div class="product-cart">
+                <!-- <h2>Deal under 25$</h2> -->
+                <div class="product-img-container">
+                    <img src="amazon_clone_img/assets/product2-5.jpg" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>20% offer</p><span> Deal</span>
+
+                </div>
+                <p class="product-price"><span>$24.49</span> List Price:35.68</p>
+                <h4>This Product is the best for you</h4>
+            </div>
+            <div class="product-cart">
+                <!-- <h2>Deal under 25$</h2> -->
+                <div class="product-img-container">
+                    <img src="amazon_clone_img/assets/product2-2.jpg" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>13% offer</p><span> Deal</span>
+
+                </div>
+                <p class="product-price"><span>$18.49</span> List Price:26.97</p>
+                <h4>This Product is the best for you</h4>
+            </div>
+            <div class="product-cart">
+                <!-- <h2>Deal under 25$</h2> -->
+                <div class="product-img-container">
+                    <img src="amazon_clone_img/assets/product2-3.jpg" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>27% offer</p><span> Deal</span>
+
+                </div>
+                <p class="product-price"><span>$23.49</span> List Price:27.97</p>
+                <h4>This Product is the best for you</h4>
+            </div>
+            <div class="product-cart">
+                <!-- <h2>Deal under 25$</h2> -->
+                <div class="product-img-container">
+                    <img src="amazon_clone_img/assets/product2-4.jpg" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>15% offer</p><span> Deal</span>
+
+                </div>
+                <p class="product-price"><span>$23.49</span> List Price:26.97</p>
+                <h4>This Product is the best for you</h4>
+            </div>
+            <div class="product-cart">
+                <!-- <h2>Deal under 25$</h2> -->
+                <div class="product-img-container">
+                    <img src="amazon_clone_img/assets/product2-5.jpg" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>20% offer</p><span> Deal</span>
+
+                </div>
+                <p class="product-price"><span>$24.49</span> List Price:23.97</p>
+                <h4>This Product is the best for you</h4>
+            </div>
+            <div class="product-cart">
+                <!-- <h2>Deal under 25$</h2> -->
+                <div class="product-img-container">
+                    <img src="amazon_clone_img/assets/product2-6.jpg" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>19% offer</p><span> Deal</span>
+
+                </div>
+                <p class="product-price"><span>$18.49</span> List Price:29.97</p>
+                <h4>This Product is the best for you</h4>
+            </div>
+        </div>
+
+    </div>
+    <div class="products-slider">
+        <h2>Best sellers in sports and Outdoors</h2>
+        <div class="products">
+
+            <img src="amazon_clone_img/assets/product1-1.jpg" alt="">
+            <img src="amazon_clone_img/assets/product1-2.jpg" alt="">
+            <img src="amazon_clone_img/assets/product1-3.jpg" alt="">
+            <img src="amazon_clone_img/assets/product1-4.jpg" alt="">
+            <img src="amazon_clone_img/assets/product1-5.jpg" alt="">
+            <img src="amazon_clone_img/assets/product1-6.jpg" alt="">
+            <img src="amazon_clone_img/assets/product1-7.jpg" alt="">
+            <img src="amazon_clone_img/assets/product1-8.jpg" alt="">
+            <img src="amazon_clone_img/assets/product1-9.jpg" alt="">
+            <img src="amazon_clone_img/assets/product1-10.jpg" alt="">
+        </div>
+    </div>
+    <div class="box-row">
+        <div class="box-col">
+            <h3>Grooming Products</h3>
+            <img src="./amazon_clone_img/assets/box3-1.jpg" alt="">
+            <button onclick="Add_to_cart(this)" class="add-to-cart">Add to cart</button>
+            <a href="">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Latest Mobile Devices</h3>
+            <img src="./amazon_clone_img/assets/box3-2.jpg" alt="">
+            <button onclick="Add_to_cart(this)" class="add-to-cart">Add to cart</button>
+            <a href="">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Pet Dogs</h3>
+            <img src="./amazon_clone_img/assets/box3-3.jpg" alt="">
+            <button onclick="Add_to_cart(this)" class="add-to-cart">Add to cart</button>
+            <a href="">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Fashion Mart</h3>
+            <img src="./amazon_clone_img/assets/box3-4.jpg" alt="">
+            <button onclick="Add_to_cart(this)" class="add-to-cart">Add to cart</button>
+            <a href="">Shop more</a>
+        </div>
+    </div>
+    <footer>
+        <img src="amazon_clone_img/assets/amazon_logo.png" width="100" alt="">
+
+        <p>&copy; 2024 Amazon.com</p>
+    </footer>
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>

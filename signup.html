@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Create Account</h2>
+        <form action="index.html" id="signupForm">
+            <div class="child">
+                <div>
+                    <label>FirstName</label>
+                    <input type="text" maxlength="10" required>
+                </div>
+                <div>
+                    <label>LastName</label>
+                    <input type="text" maxlength="10">
+                </div>
+                <div>
+                    <label for="pswd">Password</label>
+                    <input type="password" placeholder="Ex:Dcme$265" id="pswd" name="pswd" required>
+                </div>
+                <div>
+                    <label for="pswd"> Confirm Password</label>
+                    <input type="password" placeholder="Ex:Dcme$265" id="confirmpswd" minlength="6" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" required placeholder="yourmail@gmail.com">
+                </div>
+                <div class="signup">
+                    <button type="submit">Signup</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script>
+        document.getElementById("signupForm").addEventListener('submit', function (event) {
+            const pswd = document.getElementById("pswd").value;
+            const confirmpswd = document.getElementById('confirmpswd').value;
+            if (pswd !== confirmpswd) {
+                alert("Password do not match with Confirm Password");
+                event.preventDefault();
+            }
+            else {
+                let email = document.getElementById("email").value;
+                let pswd = document.getElementById("pswd").value;
+                localStorage.setItem("email", email);
+                localStorage.setItem("password", pswd);
+            }
+        });
+    </script>
+</body>
+
+</html>

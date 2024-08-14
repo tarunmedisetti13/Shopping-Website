@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f01fe13589.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="parent">
+            <form id="inner-parent">
+                <h2>Login Page</h2>
+                <div class="c1">
+                    <div class=" child">
+                        <div class="left"> <label for="email">Email:</label>
+                        </div>
+                        <div class="right"> <input type="email" placeholder="yourmail@gmail.com" id="email" required>
+                        </div>
+                        <div class="icon"><i class="fa-solid fa-envelope fa-2x"></i></div>
+
+                    </div>
+                </div>
+                <div class=" child">
+                    <div class="left"> <label for="pswd">Password:</label>
+                    </div>
+                    <div class="right"> <input type="password" placeholder="Dcme$265" id="pswd" minlength="6"
+                            maxlength="15" required>
+                    </div>
+                    <div class="icon"><i class="fa-solid fa-lock fa-2x"></i></div>
+
+                </div>
+                <div class="signup">
+                    <p>Dont have an account? <span><a href="signup.html">Signup</a></span></p>
+                </div>
+                <div class="submit">
+                    <button type="submit" class="login">Login</button>
+                </div>
+        </div>
+
+        </form>
+    </div>
+    </div>
+    <script>
+        window.addEventListener('beforeunload', function () {
+            localStorage.clear();
+        });
+
+        document.getElementById("inner-parent").addEventListener('submit', function (event) {
+            event.preventDefault();
+            let givenmail = document.getElementById("email").value;
+            let givenpswd = document.getElementById("pswd").value;
+            let storedmail = localStorage.getItem('email');
+            let storedpswd = localStorage.getItem('password');
+            if (givenmail && givenpswd) {
+                if ((givenmail != storedmail)) {
+                    alert("Email  doesn't match please signup")
+                }
+                else if ((givenmail == storedmail) && (givenpswd != storedpswd)) {
+                    alert("Incorrect Password");
+
+                }
+                else {
+                    window.location.href = ("dashboard.html");
+                }
+
+            }
+            else {
+                alert("Please signup before login");
+            }
+        });
+    </script>
+</body>
+
+</html>
